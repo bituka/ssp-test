@@ -1,0 +1,33 @@
+<%@ NApiVersion="2.x" %>
+<html>
+<head>
+<!--add css, js packages here -->
+<style></style>
+</head>
+<body>
+<h1>Hello SSP!</h1>
+</body>
+<script language="JavaScript">
+
+</script>
+</html>
+
+<%
+    var x = 'value';
+    log.audit({
+        title: 'audit log',
+        details: 'value of x is: '+x
+    });
+    log.debug({
+        title: 'debug log',
+        details: 'value of x is: '+x
+    });
+    log.emergency({
+        title: 'emergency log',
+        details: 'value of x is: '+x
+    });
+    log.error({
+        title: 'error log',
+        details: 'value of x is: '+x
+    });
+%>
